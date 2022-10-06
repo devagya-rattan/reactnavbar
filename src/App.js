@@ -1,75 +1,24 @@
-import React from "react";
-import Navbar from "./components/Navbar";
-import { Switch, Route } from "react-router-dom";
-
-const Home = () => {
-  return (
-    <>
-      <Navbar />
-      <section className="hero-section">
-        <p>Subscribe to </p>
-        <h1>Thapa Technical Home Page</h1>
-      </section>
-    </>
-  );
-};
-
-const About = () => {
-  return (
-    <>
-      <Navbar />
-      <section className="hero-section">
-        <p>Welcome to </p>
-        <h1>Thapa Technical About Page</h1>
-      </section>
-    </>
-  );
-};
-
-const Service = () => {
-  return (
-    <>
-      <Navbar />
-      <section className="hero-section">
-        <p>Welcome to </p>
-        <h1>Thapa Technical Service Page</h1>
-      </section>
-    </>
-  );
-};
-
-const Contact = () => {
-  return (
-    <>
-      <Navbar />
-      <section className="hero-section">
-        <p>Welcome to </p>
-        <h1>Thapa Technical Contact Page</h1>
-      </section>
-    </>
-  );
-};
-
-const App = () => {
-  return (
-    <Switch>
-      <Route exact path="/">
-        <Home />
-      </Route>
-
-      <Route path="/about">
-        <About />
-      </Route>
-
-      <Route path="/service">
-        <Service />
-      </Route>
-
-      <Route path="/contact">
-        <Contact />
-      </Route>
-    </Switch>
-  );
-};
+import Slot1 from "./Slot_1";
+import Slot2 from "./Slot_2";
+import Slot3 from "./Slot_3";
+let App = () => {
+  return <>
+    <h3 className="heading_style" >Welcome To  slot matching game 😊😊 </h3>
+    <div className="main_box" >
+        <div className="Slot_1" >
+        <h4 className="Slot_heading" >🎰SLOT 1</h4>
+        <Slot1/>
+        </div>
+        <div className="Slot_2" >
+        <h4 className="Slot_heading" >🎰SLOT 2</h4>
+        <Slot2/>
+        </div>
+        <div className="Slot_3" >
+        <h4 className="Slot_heading" >🎰SLOT 3</h4>
+        <Slot3/>
+        </div>
+    </div>
+  </>
+}
 
 export default App;
