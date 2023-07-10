@@ -1,4 +1,4 @@
-#Slot matching game
+# Slot matching game
 Developed s Slot matching game using react.js. the code generates random emoji's in different slots and determines whether the generated emoji's are same or not.
 This was my first ever react project
 
